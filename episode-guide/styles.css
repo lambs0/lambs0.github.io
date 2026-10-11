@@ -1,0 +1,12 @@
+nav ul {list-style-type: none;}
+/*The green color didn't show up for the link because links don't follow the general text color changes and need to be changed separately */
+header, footer {background-color:lightgray; color:green}
+nav {background-color:lightgray; color:green}
+header a {color:black}
+footer a {color:black}
+table thead {background-color:lightgreen;}
+table tbody {background-color:bisque}
+.favorite {background-color:lightseagreen;}
+
+nav a:hover, nav a:focus {text-decoration:wavy underline; color:red; background-color:rgb(230, 216, 97)}
+footer a:hover, footer a:focus {text-decoration:wavy underline; color:red; background-color:rgb(230, 216, 97)}
