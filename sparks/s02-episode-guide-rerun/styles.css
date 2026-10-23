@@ -1,0 +1,50 @@
+body {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #1f2933;
+  background-color: #eee9dc;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+footer {
+  padding: 1rem;
+  color: #000;
+  background-color: #eee9dc;
+}
+
+footer a {
+  color: #111;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-block-end: 0.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #465346;
+  text-align: left;
+}
+
+thead {
+  background-color: #7d956b;
+}
+
+tbody {
+  background-color: #eddec2;
+}
+
+.favorite {
+  background-color: #a3ba91;
+}
