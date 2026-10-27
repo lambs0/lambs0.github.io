@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cabin at Dawn — Theme Palette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <p class="eyebrow">S03 · Theme palette</p>
+    <h1>A cabin at dawn</h1>
+    <p class="intro">A light snowstorm softens the forest just before sunrise. Snow gives the page a quiet, open feeling, while deep pine brings the warmth and shelter of a cabin. Frosted teal adds the cool color of distant trees, and a touch of dawn gold catches the first light.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="palette-heading">
+      <h2 id="palette-heading">The four-color palette</h2>
+      <div class="palette-grid">
+        <article class="palette-card">
+          <div class="swatch swatch-snow" aria-hidden="true"></div>
+          <h3>Snow</h3>
+          <p>Page background — the quiet, snowy setting.</p>
+          <dl class="color-values">
+            <dt>Hex</dt>
+            <dd><code>#F2F2F2</code></dd>
+            <dt>RGB</dt>
+            <dd><code>rgb(242, 242, 242)</code></dd>
+            <dt>HSL</dt>
+            <dd><code>hsl(0, 0%, 94.9%)</code></dd>
+          </dl>
+        </article>
+
+        <article class="palette-card">
+          <div class="swatch swatch-pine" aria-hidden="true"></div>
+          <h3>Cabin pine</h3>
+          <p>Text — a dark, readable evergreen.</p>
+          <dl class="color-values">
+            <dt>Hex</dt>
+            <dd><code>#26382E</code></dd>
+            <dt>RGB</dt>
+            <dd><code>rgb(38, 56, 46)</code></dd>
+            <dt>HSL</dt>
+            <dd><code>hsl(146.67, 19.15%, 18.43%)</code></dd>
+          </dl>
+        </article>
+
+        <article class="palette-card">
+          <div class="swatch swatch-teal" aria-hidden="true"></div>
+          <h3>Frosted teal</h3>
+          <p>Accent — the cool, distant forest.</p>
+          <dl class="color-values">
+            <dt>Hex</dt>
+            <dd><code>#35666B</code></dd>
+            <dt>RGB</dt>
+            <dd><code>rgb(53, 102, 107)</code></dd>
+            <dt>HSL</dt>
+            <dd><code>hsl(185.56, 33.75%, 31.37%)</code></dd>
+          </dl>
+        </article>
+
+        <article class="palette-card">
+          <div class="swatch swatch-gold" aria-hidden="true"></div>
+          <h3>Dawn gold</h3>
+          <p>Highlight — the first warm light on the snow.</p>
+          <dl class="color-values">
+            <dt>Hex</dt>
+            <dd><code>#F2C879</code></dd>
+            <dt>RGB</dt>
+            <dd><code>rgb(242, 200, 121)</code></dd>
+            <dt>HSL</dt>
+            <dd><code>hsl(39.17, 82.31%, 71.18%)</code></dd>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="sample" aria-labelledby="sample-heading">
+      <h2 id="sample-heading">A sample in the theme</h2>
+      <p>The cabin window glows as the first flakes drift past. Beyond the porch, snow settles over the dark pines and the morning sky begins to brighten.</p>
+      <p><a href="https://en.wikipedia.org/wiki/Snow">Read about snow</a> in the quiet forest.</p>
+      <button type="button">A sample button</button>
+    </section>
+
+    <section aria-labelledby="contrast-heading">
+      <h2 id="contrast-heading">Contrast proof</h2>
+      <p>Ratios use the WCAG relative-luminance formula used by the WebAIM contrast checker.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Text and background contrast pairs</caption>
+          <thead>
+            <tr>
+              <th scope="col">Text</th>
+              <th scope="col">Background</th>
+              <th scope="col">Ratio</th>
+              <th scope="col">Good for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cabin pine body text</th>
+              <td>Snow</td>
+              <td>11.11:1</td>
+              <td>Body text</td>
+            </tr>
+            <tr>
+              <th scope="row">Frosted teal link</th>
+              <td>Snow</td>
+              <td>5.74:1</td>
+              <td>Body text</td>
+            </tr>
+            <tr>
+              <th scope="row">Cabin pine button and table labels</th>
+              <td>Dawn gold</td>
+              <td>7.88:1</td>
+              <td>Body text</td>
+            </tr>
+            <tr>
+              <th scope="row">Snow heading text</th>
+              <td>Pine-to-teal gradient (worst point: teal)</td>
+              <td>5.75:1</td>
+              <td>Large text only</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="focus-note">The accent-colored keyboard focus outline contrasts with both the snow page (5.75:1) and the dawn-gold button (4.08:1).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>A quiet palette for a brightening winter morning.</p>
+  </footer>
+</body>
+</html>
