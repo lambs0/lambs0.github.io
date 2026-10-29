@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Last Alibi — Type Scale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="reading-column">
+      <p class="eyebrow">S04 · Type scale</p>
+      <h1>The Last Alibi</h1>
+      <p class="intro">A storm has sealed Blackthorn Manor for the night. One guest is missing, every witness has a secret, and the story’s typography must make each clue easy to read.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="reading-column" aria-labelledby="case-file-heading">
+      <h2 id="case-file-heading">Case file: the midnight study</h2>
+      <h3>The key on the windowsill</h3>
+      <p>At half past eleven, the guests heard a bell ring from the locked study. Inspector Vale found a brass key on the windowsill, though rain had left no footprints outside. The evidence is strange; the account of it should be unmistakably clear.</p>
+
+      <blockquote>
+        <p>“A locked door is only a puzzle until you learn who had the key.”</p>
+        <cite>— Inspector Vale</cite>
+      </blockquote>
+
+      <h3>Clues recorded at the scene</h3>
+      <ul>
+        <li>A clock stopped at 11:30.</li>
+        <li>One wet footprint faced away from the window.</li>
+        <li>The study’s guest book had a page torn out.</li>
+      </ul>
+
+      <p>For a quick refresher on sizing text with relative units, see MDN’s guide to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">CSS <code>font-size</code> property</a>.</p>
+    </section>
+
+    <section class="reading-column font-notes" aria-labelledby="why-fonts-heading">
+      <h2 id="why-fonts-heading">Why these fonts</h2>
+      <p><strong>Cormorant Garamond</strong> gives the headings the refined, old-fashioned feel of a classic mystery novel without using cursive. It is loaded at weight 700 for the headings only, keeping the fine letterforms clear. If the web font is unavailable, Georgia and then the browser’s serif fallback keep the same formal mood.</p>
+      <p><strong>System UI</strong> is used for body text because familiar, sturdy letterforms make the clues comfortable to read, even when the reader needs extra help. It also avoids adding a second web font.</p>
+      <ul>
+        <li><strong>Body:</strong> 1.25rem for generous, comfortable reading.</li>
+        <li><strong>H3:</strong> 1.5rem for individual clues.</li>
+        <li><strong>H2:</strong> 2rem for major sections.</li>
+        <li><strong>H1:</strong> 3rem for the title of the case.</li>
+        <li><strong>Line height:</strong> 1.6, a unitless value that gives longer passages room to breathe.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p class="reading-column">A clear type scale lets every reader follow the clues.</p>
+  </footer>
+</body>
+</html>
