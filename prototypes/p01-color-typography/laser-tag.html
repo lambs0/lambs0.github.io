@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You're Invited: Laser Tag Night</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="laser-tag.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav reading-column" aria-label="Prototype pages">
+      <a href="index.html">Home</a>
+      <a href="field-guide.html">Marine field guide</a>
+      <a href="field-guide-dark.html">Dark marine field guide</a>
+      <a href="laser-tag.html" aria-current="page">Laser tag party</a>
+    </nav>
+    <div class="hero reading-column">
+      <p class="eyebrow">Power up · suit up · show up</p>
+      <h1>You're invited to laser tag night!</h1>
+      <p>Get ready for glowing lights, friendly rivalries, and one very important mission: have a blast.</p>
+      <a class="rsvp-link" href="mailto:rsvp@example.com?subject=Laser%20Tag%20RSVP">Save your spot</a>
+    </div>
+  </header>
+
+  <main class="reading-column">
+    <section aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Mission details</h2>
+      <dl class="event-details">
+        <dt>When</dt>
+        <dd><time datetime="2026-11-20T19:00">Friday, November 20, 2026 at 7:00 p.m.</time></dd>
+        <dt>Where</dt>
+        <dd><address>432 Beckmond Lane, Sandy, UT 84092</address></dd>
+        <dt>RSVP</dt>
+        <dd>By November 15 to <a href="mailto:rsvp@example.com?subject=Laser%20Tag%20RSVP">rsvp@example.com</a>.</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="briefing-heading">
+      <h2 id="briefing-heading">Your pre-game briefing</h2>
+      <ul>
+        <li>Bring your best team spirit. All experience levels are welcome.</li>
+        <li>Wear comfortable shoes and dark clothes.</li>
+        <li>Arrive a little early so we can gear up before the first round.</li>
+      </ul>
+      <p> We can't wait to see you on the arena floor!</p>
+    </section>
+
+    <section aria-labelledby="palette-heading">
+      <h2 id="palette-heading">Laser arena palette</h2>
+      <p>Dark arena tones set the scene, while bright team colors keep important text easy to spot.</p>
+      <ul class="palette-list">
+        <li><span class="swatch swatch-void" aria-hidden="true"></span><strong>Night shift:</strong> #0B0D12</li>
+        <li><span class="swatch swatch-panel" aria-hidden="true"></span><strong>Laser arena:</strong> #151B2B</li>
+        <li><span class="swatch swatch-light" aria-hidden="true"></span><strong>Signal white:</strong> #F5F7FF</li>
+        <li><span class="swatch swatch-cyan" aria-hidden="true"></span><strong>Laser cyan:</strong> #45F3FF</li>
+        <li><span class="swatch swatch-lime" aria-hidden="true"></span><strong>Team lime:</strong> #B7FF5A</li>
+      </ul>
+
+      <h3 id="contrast-heading">Contrast results</h3>
+      <p>Each pair below is used on the page. The ratios meet WCAG AA for normal text (at least 4.5:1).</p>
+      <div class="table-wrap" role="region" aria-labelledby="contrast-heading" tabindex="0">
+        <table>
+          <caption>Text contrast pairs and WCAG AA results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Text color</th>
+              <th scope="col">Background color</th>
+              <th scope="col">Ratio</th>
+              <th scope="col">WCAG AA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Signal white #F5F7FF</th>
+              <td>Night shift #0B0D12</td>
+              <td>18.16:1</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <th scope="row">Signal white #F5F7FF</th>
+              <td>Laser arena #151B2B</td>
+              <td>16.04:1</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <th scope="row">Laser cyan #45F3FF</th>
+              <td>Night shift #0B0D12</td>
+              <td>14.36:1</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <th scope="row">Laser cyan #45F3FF</th>
+              <td>Laser arena #151B2B</td>
+              <td>12.68:1</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <th scope="row">Team lime #B7FF5A</th>
+              <td>Night shift #0B0D12</td>
+              <td>16.16:1</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <th scope="row">Team lime #B7FF5A</th>
+              <td>Laser arena #151B2B</td>
+              <td>14.27:1</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <th scope="row">Night shift #0B0D12</th>
+              <td>Team lime #B7FF5A</td>
+              <td>16.16:1</td>
+              <td>Pass</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Links are underlined as well as cyan, so color is not the only way they stand out. Ratios were checked with <a href="https://webaim.org/resources/contrastchecker/">WebAIM's Contrast Checker</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="reading-column">Laser tag party invitation.</p>
+  </footer>
+</body>
+</html>

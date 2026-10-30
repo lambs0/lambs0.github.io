@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P01 · Color and Typography</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="reading-column">
+      <p class="eyebrow">DIGHT 250 · Prototype 01</p>
+      <h1>Color and typography in two very different worlds</h1>
+      <p>Explore a calm Pacific Northwest field guide and a high-energy laser tag invitation. Each page uses its own palette and type pairing to support its theme while keeping text readable.</p>
+    </div>
+    <nav class="site-nav reading-column" aria-label="Prototype pages">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="field-guide.html">Marine field guide</a>
+      <a href="field-guide-dark.html">Dark marine field guide</a>
+      <a href="laser-tag.html">Laser tag party</a>
+    </nav>
+  </header>
+
+  <main class="reading-column">
+    <section aria-labelledby="field-guide-heading">
+      <h2 id="field-guide-heading">Pacific Northwest marine field guide</h2>
+      <p><a href="field-guide.html">Visit the marine field guide</a></p>
+      <p><a href="field-guide-dark.html">Visit the dark marine field guide</a></p>
+      <h3>Why these fonts and colors</h3>
+      <p>Barlow Condensed 700 gives headers a dominant yet simple look. Lora 400 makes the body text look professional and makes it comfortable to read. The combination of light colors like the foam and sea glass combined with darker colors like deeper water, kelp, and shore stone provide good contrast, which makes the text readable. These colors work together to create a marine-like atmosphere.</p>
+      <h3>Coast and kelp palette</h3>
+      <ul class="palette-list">
+        <li><span class="swatch swatch-foam" aria-hidden="true"></span><strong>Foam · #FFFFFF</strong> </li>
+        <li><span class="swatch swatch-deep" aria-hidden="true"></span><strong>Deep water · #142C38</strong> </li>
+        <li><span class="swatch swatch-sea" aria-hidden="true"></span><strong>Sea glass · #DCEEF1</strong> </li>
+        <li><span class="swatch swatch-kelp" aria-hidden="true"></span><strong>Kelp · #2E5D50</strong> </li>
+        <li><span class="swatch swatch-stone" aria-hidden="true"></span><strong>Shore stone · #B75C36</strong> </li>
+      </ul>
+      <h3>Contrast results</h3>
+      <p>These text and background combinations are used in the field guide. All pass WCAG AA for normal text.</p>
+      <div class="table-wrap" role="region" aria-label="Marine field guide contrast results" tabindex="0">
+        <table>
+          <caption>Marine field guide contrast results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Text color</th>
+              <th scope="col">Background color</th>
+              <th scope="col">Ratio</th>
+              <th scope="col">WCAG AA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Deep water #142C38</th><td>Foam #FFFFFF</td><td>14.51:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Deep water #142C38</th><td>Sea glass #DCEEF1</td><td>12.12:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Kelp #2E5D50 links</th><td>Foam #FFFFFF</td><td>7.50:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Kelp #2E5D50 links</th><td>Sea glass #DCEEF1</td><td>6.27:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Foam #FFFFFF</th><td>Deep water #142C38</td><td>14.51:1</td><td>Pass</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Dark version contrast results</h3>
+      <p>The copied dark field guide uses these text and background combinations. All pass WCAG AA for normal text.</p>
+      <div class="table-wrap" role="region" aria-label="Dark marine field guide contrast results" tabindex="0">
+        <table>
+          <caption>Dark marine field guide contrast results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Text color</th>
+              <th scope="col">Background color</th>
+              <th scope="col">Ratio</th>
+              <th scope="col">WCAG AA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Foam #FFFFFF</th><td>Deep water #142C38</td><td>14.51:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Sea glass #DCEEF1 links</th><td>Deep water #142C38</td><td>12.12:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Deep water #142C38</th><td>Sea glass #DCEEF1 table headings</td><td>12.12:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Foam #FFFFFF footer text</th><td>Deep water #142C38</td><td>14.51:1</td><td>Pass</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="laser-tag-heading">
+      <h2 id="laser-tag-heading">Laser tag party invitation</h2>
+      <p><a href="laser-tag.html">Visit the laser tag invitation</a></p>
+      <h3>Why these fonts and colors</h3>
+      <p>Orbitron 700 gives the headings a blocky look, which fits well with a laser tag theme. Inter 400 and 600 make the body text readable and simple. The color palette includes bright neon colors and dark backgrounds. This combination gives the feel of a laser lights in the dark while making the text readable.  </p>
+      <h3>Laser arena palette</h3>
+      <ul class="palette-list">
+        <li><span class="swatch swatch-void" aria-hidden="true"></span><strong>Night shift · #0B0D12</strong></li>
+        <li><span class="swatch swatch-panel" aria-hidden="true"></span><strong>Laser arena · #151B2B</strong> </li>
+        <li><span class="swatch swatch-light" aria-hidden="true"></span><strong>Signal white · #F5F7FF</strong> </li>
+        <li><span class="swatch swatch-cyan" aria-hidden="true"></span><strong>Laser cyan · #45F3FF</strong> </li>
+        <li><span class="swatch swatch-lime" aria-hidden="true"></span><strong>Team lime · #B7FF5A</strong> </li>
+      </ul>
+      <h3>Contrast results</h3>
+      <p>These text and background combinations are used in the invitation. All pass WCAG AA for normal text.</p>
+      <div class="table-wrap" role="region" aria-label="Laser tag invitation contrast results" tabindex="0">
+        <table>
+          <caption>Laser tag invitation contrast results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Text color</th>
+              <th scope="col">Background color</th>
+              <th scope="col">Ratio</th>
+              <th scope="col">WCAG AA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Signal white #F5F7FF</th><td>Night shift #0B0D12</td><td>18.16:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Signal white #F5F7FF</th><td>Laser arena #151B2B</td><td>16.04:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Laser cyan #45F3FF</th><td>Night shift #0B0D12</td><td>14.36:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Laser cyan #45F3FF</th><td>Laser arena #151B2B</td><td>12.68:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Team lime #B7FF5A</th><td>Night shift #0B0D12</td><td>16.16:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Team lime #B7FF5A</th><td>Laser arena #151B2B</td><td>14.27:1</td><td>Pass</td></tr>
+            <tr><th scope="row">Night shift #0B0D12</th><td>Team lime #B7FF5A</td><td>16.16:1</td><td>Pass</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <p>Contrast ratios were checked with <a href="https://webaim.org/resources/contrastchecker/">WebAIM's Contrast Checker</a>. WCAG AA requires at least 4.5:1 for normal text and 3:1 for large text.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p class="reading-column">P01 · Color and Typography</p>
+  </footer>
+</body>
+</html>
