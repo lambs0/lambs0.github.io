@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe cards — Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="title-group">
+      <p class="eyebrow">S06 · Flexbox</p>
+      <h1>Recipe cards</h1>
+    </div>
+    <nav aria-label="Course pages">
+      <ul>
+        <li><a href="../../">Course hub</a></li>
+        <li><a href="../s05-box-model/">S05: Pumpkin cookies</a></li>
+        <li><a href="../../archive/">Archive</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Find something good to make</h2>
+      <p>Browse a few quick ideas for a refreshing drink, a comforting meal, or a sweet treat. Choose a card to jump straight to its recipe.</p>
+    </section>
+
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured recipes</h2>
+      <div class="recipe-grid">
+        <article class="recipe-card recipe-lemonade">
+          <h3>Strawberry lemonade</h3>
+          <p>A bright, fruity drink made with fresh strawberries and lemon.</p>
+          <a href="#strawberry-lemonade">Jump to the strawberry lemonade recipe</a>
+        </article>
+        <article class="recipe-card recipe-pasta">
+          <h3>Tomato-basil pasta</h3>
+          <p>A simple main course with juicy tomatoes, basil, and pasta.</p>
+          <a href="#tomato-basil-pasta">Jump to the tomato-basil pasta recipe</a>
+        </article>
+        <article class="recipe-card recipe-cookies">
+          <h3>Pumpkin cookies</h3>
+          <p>Soft, warmly spiced cookies for sharing with friends.</p>
+          <a href="#pumpkin-cookies">Jump to the pumpkin cookies recipe</a>
+        </article>
+        <article class="recipe-card recipe-cake">
+          <h3>Chocolate mug cake</h3>
+          <p>A small, quick chocolate dessert for a cozy evening.</p>
+          <a href="#chocolate-mug-cake">Jump to the chocolate mug cake recipe</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="recipe-details recipe-lemonade" id="strawberry-lemonade" aria-labelledby="strawberry-heading">
+      <h2 id="strawberry-heading">Strawberry lemonade</h2>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 cup fresh strawberries, hulled</li>
+        <li>Juice of 2 lemons</li>
+        <li>3 tablespoons sugar, or to taste</li>
+        <li>3 cups cold water</li>
+        <li>Ice and lemon slices for serving</li>
+      </ul>
+      <h3>Directions</h3>
+      <ol>
+        <li>Mash the strawberries in a bowl until they release their juice.</li>
+        <li>Stir in the lemon juice and sugar until the sugar dissolves.</li>
+        <li>Pour the mixture through a strainer into a pitcher, pressing the berries to get their juice.</li>
+        <li>Add the cold water and stir. Taste and add more sugar or lemon if needed.</li>
+        <li>Serve over ice and garnish with lemon slices.</li>
+      </ol>
+    </section>
+
+    <section class="recipe-details recipe-pasta" id="tomato-basil-pasta" aria-labelledby="pasta-heading">
+      <h2 id="pasta-heading">Tomato-basil pasta</h2>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>8 ounces pasta</li>
+        <li>1 tablespoon olive oil</li>
+        <li>2 cups chopped ripe tomatoes</li>
+        <li>1 small garlic clove, minced</li>
+        <li>¼ cup fresh basil leaves, torn</li>
+        <li>¼ cup grated Parmesan cheese</li>
+        <li>Salt and black pepper</li>
+      </ul>
+      <h3>Directions</h3>
+      <ol>
+        <li>Bring a pot of salted water to a boil. Add the pasta and cook according to the package directions.</li>
+        <li>While the pasta cooks, warm the olive oil in a pan over medium heat.</li>
+        <li>Add the tomatoes and garlic. Cook for 6–8 minutes, stirring now and then, until the tomatoes soften.</li>
+        <li>Drain the pasta, saving a small splash of its cooking water.</li>
+        <li>Toss the pasta with the tomato mixture, basil, and a little cooking water. Season with salt and pepper.</li>
+        <li>Serve with Parmesan sprinkled on top.</li>
+      </ol>
+    </section>
+
+    <section class="recipe-details recipe-cookies" id="pumpkin-cookies" aria-labelledby="cookies-heading">
+      <h2 id="cookies-heading">Pumpkin cookies</h2>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>½ cup softened butter</li>
+        <li>¾ cup sugar</li>
+        <li>1 egg</li>
+        <li>1 cup pumpkin purée</li>
+        <li>2 cups flour</li>
+        <li>1 teaspoon cinnamon</li>
+        <li>1 teaspoon baking powder</li>
+      </ul>
+      <h3>Directions</h3>
+      <ol>
+        <li>Heat the oven to 350°F and line a baking sheet with parchment paper.</li>
+        <li>In a large bowl, cream the softened butter and sugar until smooth.</li>
+        <li>Mix in the egg and pumpkin purée.</li>
+        <li>In another bowl, stir together the flour, cinnamon, and baking powder.</li>
+        <li>Add the dry ingredients to the pumpkin mixture and stir just until combined.</li>
+        <li>Spoon the dough onto the baking sheet, leaving room between cookies.</li>
+        <li>Bake for 12–14 minutes. Let the cookies cool on the baking sheet before serving.</li>
+      </ol>
+    </section>
+
+    <section class="recipe-details recipe-cake" id="chocolate-mug-cake" aria-labelledby="cake-heading">
+      <h2 id="cake-heading">Chocolate mug cake</h2>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>4 tablespoons flour</li>
+        <li>2 tablespoons cocoa powder</li>
+        <li>2 tablespoons sugar</li>
+        <li>⅛ teaspoon baking powder</li>
+        <li>3 tablespoons milk</li>
+        <li>1 tablespoon neutral oil</li>
+        <li>1 tablespoon chocolate chips (optional)</li>
+      </ul>
+      <h3>Directions</h3>
+      <ol>
+        <li>Choose a large microwave-safe mug so the cake has room to rise.</li>
+        <li>Stir the flour, cocoa, sugar, and baking powder together in the mug.</li>
+        <li>Add the milk and oil, then stir until there are no dry patches. Mix in the chocolate chips if using.</li>
+        <li>Microwave for about 60 seconds. If the center is still very wet, heat for 10 seconds more at a time.</li>
+        <li>Let the mug cool for a minute before eating carefully with a spoon.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../../">Back to the course hub</a></p>
+  </footer>
+</body>
+</html>

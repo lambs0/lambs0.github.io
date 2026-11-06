@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color: #000;
+  background-color: #fff;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem 1.5rem;
+  border-bottom: 0.1rem solid #000;
+}
+
+.title-group {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.15;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a,
+footer a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border: 0.1rem solid #000;
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:focus-visible {
+  outline: 0.2rem solid #000;
+  outline-offset: 0.15rem;
+}
+
+main {
+  padding-block: 1rem;
+}
+
+.intro {
+  max-width: 42rem;
+  margin-block-end: 2rem;
+}
+
+h2 {
+  margin-block: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.recipe-card {
+  display: flex;
+  flex: 1 1 14rem;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 0.15rem solid #000;
+  background-color: #fff;
+  overflow-wrap: anywhere;
+}
+
+.recipe-card h3,
+.recipe-card p {
+  margin: 0;
+}
+
+.recipe-card a {
+  margin-block-start: auto;
+  padding-block: 0.35rem;
+  color: #000;
+  text-underline-offset: 0.15em;
+}
+
+.recipe-details {
+  margin-block-start: 1.5rem;
+  padding: 1rem;
+  border: 0.15rem solid #000;
+  background-color: #fff;
+  overflow-wrap: anywhere;
+  scroll-margin-block-start: 1rem;
+}
+
+.recipe-details p {
+  margin-block: 0;
+}
+
+.recipe-lemonade {
+  border-color: #8a2458;
+  background-color: #fce8f1;
+}
+
+.recipe-lemonade h2,
+.recipe-lemonade h3,
+.recipe-lemonade a {
+  color: #8a2458;
+}
+
+.recipe-pasta {
+  border-color: #8c1d18;
+  background-color: #fce8e6;
+}
+
+.recipe-pasta h2,
+.recipe-pasta h3,
+.recipe-pasta a {
+  color: #8c1d18;
+}
+
+.recipe-cookies {
+  border-color: #754c00;
+  background-color: #fff1d6;
+}
+
+.recipe-cookies h2,
+.recipe-cookies h3,
+.recipe-cookies a {
+  color: #754c00;
+}
+
+.recipe-cake {
+  border-color: #4b2e24;
+  background-color: #efe7e2;
+}
+
+.recipe-cake h2,
+.recipe-cake h3,
+.recipe-cake a {
+  color: #4b2e24;
+}
+
+footer {
+  margin-block-start: 1.5rem;
+  padding-block: 1rem;
+  border-block-start: 0.1rem solid #000;
+}
