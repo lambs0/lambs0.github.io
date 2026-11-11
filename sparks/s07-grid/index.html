@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trail guide near BYU — CSS Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-layout">
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">S07 · CSS Grid</p>
+        <h1>Trail guide near BYU</h1>
+      </div>
+      <nav aria-label="Course pages">
+        <ul>
+          <li><a href="../../">Course hub</a></li>
+          <li><a href="../s06-flexbox/">S06: Recipe cards</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">Find a nearby place to hike</h2>
+        <p>Compare parking notes and trail-condition examples before heading out from campus.</p>
+      </section>
+
+      <section aria-labelledby="trails-heading">
+        <h2 id="trails-heading">Nearby trails</h2>
+        <p class="planning-note"><strong>Planning note:</strong> These condition examples are not live reports. Check current trail information, weather, and parking rules before you leave.</p>
+
+        <div class="trail-grid">
+          <article class="trail-card">
+            <h3>Y Mountain Trail</h3>
+            <dl>
+              <div>
+                <dt>Parking</dt>
+                <dd>Check access and posted rules at the Y Mountain Trailhead parking area.</dd>
+              </div>
+              <div>
+                <dt>Trail condition example</dt>
+                <dd>Example only: dry path. Conditions can change with weather and season.</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="trail-card">
+            <h3>Rock Canyon Trail</h3>
+            <dl>
+              <div>
+                <dt>Parking</dt>
+                <dd>Check availability and posted rules at the Rock Canyon Trailhead.</dd>
+              </div>
+              <div>
+                <dt>Trail condition example</dt>
+                <dd>Example only: muddy after rain. Check for recent weather and trail updates.</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="trail-card">
+            <h3>Bonneville Shoreline Trail</h3>
+            <dl>
+              <div>
+                <dt>Parking</dt>
+                <dd>Parking depends on your chosen access point; use a designated area and follow posted signs.</dd>
+              </div>
+              <div>
+                <dt>Trail condition example</dt>
+                <dd>Example only: snow or ice may be present in colder months. Verify before setting out.</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="trail-card">
+            <h3>Battle Creek Falls</h3>
+            <dl>
+              <div>
+                <dt>Parking</dt>
+                <dd>Check posted rules and availability near the Battle Creek Trailhead in Pleasant Grove.</dd>
+              </div>
+              <div>
+                <dt>Trail condition example</dt>
+                <dd>Example only: the route near the falls may be wet or slippery. Check recent conditions before hiking.</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="wildlife-note" aria-labelledby="wildlife-heading">
+      <h2 id="wildlife-heading">Wildlife on the trail</h2>
+      <p>You may see birds, small mammals, or deer on nearby foothill trails. Wildlife sightings vary by season and location.</p>
+      <p>Give animals room, never feed them, and keep food and litter secure. Observe from a distance so wildlife can move naturally.</p>
+    </aside>
+
+    <footer>
+      <p><a href="../../">Back to the course hub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
