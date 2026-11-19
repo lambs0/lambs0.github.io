@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Club RSVP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">A gathering for readers</p>
+    <h1>Book Club RSVP</h1>
+    <p>Let us know if you’ll join our November 28th meeting and what you can bring.</p>
+  </header>
+
+  <main>
+    <section class="rsvp-card" aria-labelledby="rsvp-heading">
+      <h2 id="rsvp-heading">We can't wait to see you!</h2>
+      <p>Share a few details so we can start planning.</p>
+
+      <form action="thanks.html" method="get">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="form-field email-field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email"
+            aria-describedby="email-hint" required>
+          <span class="field-hint" id="email-hint">
+            <span class="hint-default">Use an address like reader@example.com.</span>
+            <span class="hint-error">Check this: enter an email address like reader@example.com.</span>
+          </span>
+        </div>
+
+        <fieldset>
+          <legend>Will you attend?</legend>
+          <div class="choice-list">
+            <label class="choice" for="attend-yes">
+              <input type="radio" id="attend-yes" name="attendance" value="yes" required>
+              Yes, I’ll be there
+            </label>
+            <label class="choice" for="attend-no">
+              <input type="radio" id="attend-no" name="attendance" value="no">
+              No, not this time
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What can you bring?</legend>
+          <div class="choice-list">
+            <label class="choice" for="bring-snack">
+              <input type="checkbox" id="bring-snack" name="bringing" value="snack">
+              A snack
+            </label>
+            <label class="choice" for="bring-drink">
+              <input type="checkbox" id="bring-drink" name="bringing" value="drink">
+              A drink
+            </label>
+            <label class="choice" for="bring-book">
+              <input type="checkbox" id="bring-book" name="bringing" value="book">
+              A book to share
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="note">Anything else we should know? <span class="optional">(optional)</span></label>
+          <textarea id="note" name="note" rows="3"></textarea>
+        </div>
+
+        <p class="privacy-note">This class demo uses GET, so your answers appear in the page address. Use sample details; this form is not connected to an organizer.</p>
+        <button type="submit">Send RSVP</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact the book-club organizer directly to confirm your plans.</p>
+  </footer>
+</body>
+</html>
