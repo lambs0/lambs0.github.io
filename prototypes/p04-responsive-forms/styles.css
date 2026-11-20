@@ -2,8 +2,8 @@
   color-scheme: light;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
-  color: #241e27;
-  background: #f5f0e8;
+  color: #243027;
+  background: #eaf2e9;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
 
 .eyebrow {
   margin: 0 0 0.35rem;
-  color: #53345e;
+  color: #2d6245;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -40,7 +40,7 @@ p {
 
 h1 {
   margin-bottom: 0.5rem;
-  color: #321d3b;
+  color: #1f412f;
   font-size: clamp(2rem, 8vw, 3.25rem);
   line-height: 1.1;
 }
@@ -56,16 +56,16 @@ h1 {
 .audition-note {
   min-width: 0;
   padding: 1.25rem;
-  border: 1px solid #756d78;
+  border: 1px solid #718276;
   border-radius: 0.8rem;
   background: #fffefa;
-  box-shadow: 0 0.5rem 1.5rem rgb(50 29 59 / 8%);
+  box-shadow: 0 0.5rem 1.5rem rgb(31 65 47 / 8%);
 }
 
 .form-card h2,
 .audition-note h2 {
   margin-bottom: 0.35rem;
-  color: #321d3b;
+  color: #1f412f;
 }
 
 .intro {
@@ -94,7 +94,7 @@ textarea {
   width: 100%;
   min-height: 2.75rem;
   padding: 0.65rem 0.75rem;
-  border: 1px solid #625a66;
+  border: 1px solid #596b5f;
   border-radius: 0.4rem;
   color: inherit;
   background: #fff;
@@ -109,7 +109,7 @@ input:focus-visible,
 textarea:focus-visible,
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #754a00;
+  outline: 3px solid #286043;
   outline-offset: 3px;
 }
 
@@ -120,7 +120,7 @@ input:user-invalid {
 
 .field-hint,
 .group-error {
-  color: #514957;
+  color: #4b5c50;
   font-size: 0.9rem;
 }
 
@@ -143,7 +143,7 @@ fieldset {
   min-width: 0;
   margin: 0;
   padding: 1rem;
-  border: 1px solid #756d78;
+  border: 1px solid #718276;
   border-radius: 0.5rem;
 }
 
@@ -168,7 +168,7 @@ legend {
   width: 1.2rem;
   height: 1.2rem;
   margin: 0.15rem 0 0;
-  accent-color: #53345e;
+  accent-color: #286043;
 }
 
 .audition-group:has(input:user-invalid) {
@@ -183,7 +183,7 @@ legend {
 
 .privacy-note {
   margin: 0;
-  color: #514957;
+  color: #4b5c50;
   font-size: 0.9rem;
 }
 
@@ -191,21 +191,21 @@ button {
   width: 100%;
   min-height: 2.75rem;
   padding: 0.65rem 1rem;
-  border: 2px solid #321d3b;
+  border: 2px solid #1f412f;
   border-radius: 0.4rem;
   color: #fff;
-  background: #321d3b;
+  background: #1f412f;
   font: inherit;
   font-weight: 700;
   cursor: pointer;
 }
 
 button:hover {
-  background: #53345e;
+  background: #2d6245;
 }
 
 .audition-note {
-  border-top: 0.35rem solid #53345e;
+  border-top: 0.35rem solid #2d6245;
 }
 
 .audition-note p:last-child {
@@ -218,14 +218,14 @@ button:hover {
 }
 
 a {
-  color: #45204f;
+  color: #1f5a37;
   font-weight: 700;
   text-underline-offset: 0.2em;
 }
 
 footer {
   margin-top: 1.5rem;
-  color: #514957;
+  color: #4b5c50;
   font-size: 0.9rem;
   text-align: center;
 }
