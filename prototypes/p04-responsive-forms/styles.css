@@ -1,0 +1,255 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #241e27;
+  background: #f5f0e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 72rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.site-header {
+  max-width: 44rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  color: #53345e;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: #321d3b;
+  font-size: clamp(2rem, 8vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.form-card,
+.audition-note {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid #756d78;
+  border-radius: 0.8rem;
+  background: #fffefa;
+  box-shadow: 0 0.5rem 1.5rem rgb(50 29 59 / 8%);
+}
+
+.form-card h2,
+.audition-note h2 {
+  margin-bottom: 0.35rem;
+  color: #321d3b;
+}
+
+.intro {
+  margin-bottom: 1.25rem;
+}
+
+form,
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+form {
+  gap: 1.1rem;
+}
+
+label,
+legend {
+  font-weight: 650;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #625a66;
+  border-radius: 0.4rem;
+  color: inherit;
+  background: #fff;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #754a00;
+  outline-offset: 3px;
+}
+
+input:user-invalid {
+  border: 2px solid #790b1d;
+  background: #fff6f6;
+}
+
+.field-hint,
+.group-error {
+  color: #514957;
+  font-size: 0.9rem;
+}
+
+.hint-error,
+.group-error {
+  display: none;
+  color: #790b1d;
+  font-weight: 700;
+}
+
+.form-field input:user-invalid + .field-hint .hint-default {
+  display: none;
+}
+
+.form-field input:user-invalid + .field-hint .hint-error {
+  display: inline;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #756d78;
+  border-radius: 0.5rem;
+}
+
+legend {
+  max-width: 100%;
+  padding: 0 0.25rem;
+}
+
+.choice-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-weight: 400;
+}
+
+.choice input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.15rem 0 0;
+  accent-color: #53345e;
+}
+
+.audition-group:has(input:user-invalid) {
+  border: 2px solid #790b1d;
+  background: #fff6f6;
+}
+
+.audition-group:has(input:user-invalid) .group-error {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.privacy-note {
+  margin: 0;
+  color: #514957;
+  font-size: 0.9rem;
+}
+
+button {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 2px solid #321d3b;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: #321d3b;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #53345e;
+}
+
+.audition-note {
+  border-top: 0.35rem solid #53345e;
+}
+
+.audition-note p:last-child {
+  margin-bottom: 0;
+}
+
+.thanks-card {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+a {
+  color: #45204f;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+footer {
+  margin-top: 1.5rem;
+  color: #514957;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48em) {
+  body {
+    padding: 3rem 1.5rem;
+  }
+
+  .page-layout {
+    grid-template-columns: minmax(0, 1.4fr) minmax(13rem, 0.8fr);
+    gap: 1.5rem;
+  }
+
+  .form-card,
+  .audition-note {
+    padding: 2rem;
+  }
+
+  button {
+    width: auto;
+  }
+}

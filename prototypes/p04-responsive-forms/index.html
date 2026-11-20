@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Into the Woods Auditions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Carriage House Theatre</p>
+    <h1>Into the Woods auditions</h1>
+    <p>We look forward to seeing you at the auditions!</p>
+  </header>
+
+  <main>
+    <div class="page-layout">
+      <section class="form-card" aria-labelledby="form-heading">
+        <h2 id="form-heading">Tell us about yourself</h2>
+        <p class="intro">Just a few questions to get started.</p>
+
+        <form action="thanks.html" method="get">
+          <div class="form-field">
+            <label for="first-name">First name (required)</label>
+            <input type="text" id="first-name" name="first-name"
+              autocomplete="given-name" aria-describedby="first-name-hint" required>
+            <span class="field-hint" id="first-name-hint">
+              <span class="hint-default">Enter the name you’d like us to use.</span>
+              <span class="hint-error">Check this: enter your first name before continuing.</span>
+            </span>
+          </div>
+
+          <div class="form-field">
+            <label for="last-name">Last name (required)</label>
+            <input type="text" id="last-name" name="last-name"
+              autocomplete="family-name" aria-describedby="last-name-hint" required>
+            <span class="field-hint" id="last-name-hint">
+              <span class="hint-default">Enter your last name.</span>
+              <span class="hint-error">Check this: enter your last name before continuing.</span>
+            </span>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address (required)</label>
+            <input type="email" id="email" name="email" autocomplete="email"
+              aria-describedby="email-hint" required>
+            <span class="field-hint" id="email-hint">
+              <span class="hint-default">We’ll use this to follow up about the audition.</span>
+              <span class="hint-error">Check this: enter a valid email address.</span>
+            </span>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone number (optional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+            <span class="field-hint">A phone number can make audition-day updates easier.</span>
+          </div>
+
+          <fieldset class="audition-group">
+            <legend>Which skill would you like to highlight? (required)</legend>
+            <div class="choice-list">
+              <label class="choice" for="area-singing">
+                <input type="radio" id="area-singing" name="area" value="singing" required>
+                Singing
+              </label>
+              <label class="choice" for="area-acting">
+                <input type="radio" id="area-acting" name="area" value="acting">
+                Acting
+              </label>
+              <label class="choice" for="area-dance">
+                <input type="radio" id="area-dance" name="area" value="dance">
+                Dance
+              </label>
+            </div>
+            <span class="group-error">Check this: choose a skill.</span>
+          </fieldset>
+
+          <fieldset>
+            <legend>Which roles would you like to audition for? (Choose any.)</legend>
+            <div class="choice-list">
+              <label class="choice" for="role-baker">
+                <input type="checkbox" id="role-baker" name="role" value="baker">
+                The Baker
+              </label>
+              <label class="choice" for="role-bakers-wife">
+                <input type="checkbox" id="role-bakers-wife" name="role" value="bakers-wife">
+                The Baker’s Wife
+              </label>
+              <label class="choice" for="role-cinderella">
+                <input type="checkbox" id="role-cinderella" name="role" value="cinderella">
+                Cinderella
+              </label>
+              <label class="choice" for="role-cinderellas-prince">
+                <input type="checkbox" id="role-cinderellas-prince" name="role" value="cinderellas-prince">
+                Cinderella’s Prince
+              </label>
+              <label class="choice" for="role-jack">
+                <input type="checkbox" id="role-jack" name="role" value="jack">
+                Jack
+              </label>
+              <label class="choice" for="role-red-riding-hood">
+                <input type="checkbox" id="role-red-riding-hood" name="role" value="red-riding-hood">
+                Red Riding Hood
+              </label>
+              <label class="choice" for="role-wolf">
+                <input type="checkbox" id="role-wolf" name="role" value="wolf">
+                The Wolf
+              </label>
+              <label class="choice" for="role-witch">
+                <input type="checkbox" id="role-witch" name="role" value="witch">
+                The Witch
+              </label>
+              <label class="choice" for="role-rapunzel">
+                <input type="checkbox" id="role-rapunzel" name="role" value="rapunzel">
+                Rapunzel
+              </label>
+              <label class="choice" for="role-rapunzels-prince">
+                <input type="checkbox" id="role-rapunzels-prince" name="role" value="rapunzels-prince">
+                Rapunzel’s Prince
+              </label>
+              <label class="choice" for="role-ensemble">
+                <input type="checkbox" id="role-ensemble" name="role" value="ensemble">
+                Ensemble
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="experience">Experience or notes (optional)</label>
+            <textarea id="experience" name="experience" rows="4"></textarea>
+          </div>
+
+          <p class="privacy-note">This practice form uses GET, so anything you enter appears in the page address. Use sample details; responses are not sent to a theater.</p>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <aside class="audition-note" aria-labelledby="note-heading">
+        <p class="eyebrow">Your first scene</p>
+        <h2 id="note-heading">Everyone starts somewhere.</h2>
+        <p>There’s no need to have a long résumé. Tell us what you’re excited to try, then bring your curiosity to the audition.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>Carriage House Theatre · Community musical auditions</p>
+  </footer>
+</body>
+</html>
